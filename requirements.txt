@@ -1,4 +1,5 @@
-opencv-python
-streamlit
+
 python-dotenv
 huggingface_hub
+opencv-python==4.9.0.80
+streamlit>=1.25.0
