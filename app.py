@@ -64,7 +64,7 @@ if run:
     start_time = time.time()
 
     if not cap.isOpened():
-        st.error("❌ Webcam not accessible")
+        st.error("❌ Webcam not accessible. Please check your camera.")
     else:
         while True:
             ret, frame = cap.read()
