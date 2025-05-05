@@ -21,8 +21,8 @@ max_no_face_duration = 10  # seconds
 fps = 10
 start_time = None
 
-# Load YOLOv8 model
-model = YOLO("yolov8n.pt")
+# Load YOLOv8 model from Ultralytics hub (no need for local .pt file)
+model = YOLO('yolov8n')  # Automatically downloads weights if needed
 
 # Load Haar face detector
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
@@ -78,7 +78,7 @@ if run:
 
             # Draw face box
             for (x, y, w, h) in faces:
-                cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
             # Detection logic
             flash = detect_flashlight(frame)
