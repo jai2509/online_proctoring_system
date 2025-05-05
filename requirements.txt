@@ -1,10 +1,4 @@
-
-python-dotenv
-huggingface_hub
-streamlit
-opencv-python-headless
-python-dotenv
-numpy
-huggingface-hub
-
-streamlit>=1.25.0
+streamlit==1.35.0
+opencv-python-headless==4.9.0.80
+numpy==1.24.4
+ultralytics==8.1.36
